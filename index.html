@@ -123,6 +123,7 @@ table.diag-tight td{font-size:13px;}
 
 /* ---------- citações ---------- */
 .quote-wrap{display:flex;flex-direction:column;align-items:center;text-align:center;}
+.section > .inner.quote-wrap{margin:auto;}
 .quote{font-weight:300;font-size:clamp(26px,3.7vw,46px);line-height:1.25;max-width:960px;color:#f2f2f2;margin:0;}
 .quote b{font-weight:700;}
 .quote-sub{margin-top:26px;font-size:15px;line-height:1.65;color:#b0b0b0;max-width:640px;}
@@ -185,8 +186,9 @@ body[data-theme="dark"] #pager button:hover{background:rgba(255,255,255,.1);}
   .two-col{flex-direction:column;gap:28px;}
   .panel{align-self:stretch;}
   .grid3{grid-template-columns:1fr;}
-  #brandbar{padding-bottom:14px;background:rgba(236,236,236,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);}
-  body[data-theme="dark"] #brandbar{background:rgba(30,30,30,.82);}
+  #brandbar{height:calc(62px + env(safe-area-inset-top, 0px));padding:env(safe-area-inset-top, 0px) 20px 0;background:#f2f2f2;}
+  body[data-theme="dark"] #brandbar{background:#2a2a2a;}
+  .section{top:calc(62px + env(safe-area-inset-top, 0px));padding-top:32px;}
 }
 @media (max-width:700px){
   .sumlist{grid-template-columns:1fr;grid-auto-flow:row;grid-template-rows:none;gap:6px;}
@@ -261,7 +263,7 @@ body[data-theme="dark"] #pager button:hover{background:rgba(255,255,255,.1);}
       <span class="tag">Displays 3D para restaurantes</span>
       <span class="tag">Santo André – SP</span>
       <span class="tag">Site + Instagram</span>
-      <span class="tag">Clientes como Heineken e Estação Praça</span>
+      <span class="tag">Modelagem, impressão 3D e pintura</span>
     </div>
   </div>
 </section>
@@ -287,7 +289,7 @@ body[data-theme="dark"] #pager button:hover{background:rgba(255,255,255,.1);}
         <thead><tr><th>Canal</th><th>Números</th><th>Estado visual</th></tr></thead>
         <tbody>
           <tr><td class="chan">Site</td><td class="num">fabricamanaca.com.br</td><td>Template de orgânicos nunca adaptado, sem funil e com vídeo fora do ar</td></tr>
-          <tr><td class="chan">Instagram</td><td class="num">69 posts · 305 seguidores · 1–9 curtidas</td><td>Dois logos, arte sem padrão e fotos reais trocadas por cenas de IA</td></tr>
+          <tr><td class="chan">Instagram</td><td class="num">69 posts · 305 seguidores · 1–9 curtidas</td><td>Dois logos, arte sem padrão e peças apresentadas em cenas de IA</td></tr>
           <tr><td class="chan">Facebook</td><td class="num">Sem página oficial localizada</td><td>Botão do site leva a um link genérico, não a uma página da empresa</td></tr>
           <tr><td class="chan">YouTube</td><td class="num">Vídeo de apresentação</td><td>Vídeo incorporado na home aparece como “Vídeo indisponível”</td></tr>
         </tbody>
@@ -325,7 +327,7 @@ body[data-theme="dark"] #pager button:hover{background:rgba(255,255,255,.1);}
       <ul class="findlist reveal-list">
         <li><b>Dois logos convivendo:</b> a árvore geométrica com seta no avatar e a silhueta de acácia com “MANACÁ” condensado na maioria dos posts.</li>
         <li><b>Sem padrão de arte:</b> serifa itálica, script, grotesca condensada e sans genérica se alternam, assim como verde-petróleo, amarelo, marrom, laranja e creme.</li>
-        <li><b>IA no lugar das peças reais:</b> displays de clientes como Liz e Botequim Paulista já aparecem em fotos reais nos posts antigos, e foram trocados por cenários gerados por IA, com pessoas sem relação com o produto.</li>
+        <li><b>IA no lugar das peças reais:</b> os displays aparecem em cenários gerados por IA, com pessoas sem relação com o produto. Para uma peça física e sob medida, isso faz o cliente duvidar do que vai receber.</li>
         <li><b>Repetição sem editoria:</b> “Chega de xerox colado” aparece cerca de seis vezes, cada uma com uma execução diferente; uma mesma frase de cardápio digital abre dois posts seguidos.</li>
         <li><b>Argumento difuso:</b> cerca de sete promessas convivem (economia, comodidade, pioneirismo, experiência de agência, exclusividade, CRM, maquetes e troféus).</li>
         <li><b>Perfil sem porta de entrada:</b> 305 seguidores para 1.078 seguindo, sem destaques, e uma bio que lista produtos mas não diz para quem é nem como pedir.</li>
@@ -389,12 +391,10 @@ body[data-theme="dark"] #pager button:hover{background:rgba(255,255,255,.1);}
         <colgroup><col style="width:18%"><col style="width:82%"></colgroup>
         <thead><tr><th>Frente</th><th>Ponto positivo</th></tr></thead>
         <tbody>
-          <tr><td class="chan">Produto</td><td>Peças diferenciadas e memoráveis, como o trem da Estação Praça e o bulldog do Cão Véio</td></tr>
-          <tr><td class="chan">Clientes</td><td>Carteira real e reconhecível: Heineken, Boteco Paulista, Estação Praça, Liz, MG74, Select Club, Cão Véio, Point do Gordão</td></tr>
-          <tr><td class="chan">Fotografia</td><td>Já existe acervo de fotos reais de peças instaladas nos clientes, e acesso aos restaurantes para novas sessões</td></tr>
+          <tr><td class="chan">Produto</td><td>Peças diferenciadas e memoráveis, com temas criados sob medida para cada restaurante</td></tr>
+          <tr><td class="chan">Proposta</td><td>Resolve um problema visível: troca o QR code impresso em papel por uma peça que faz parte da decoração</td></tr>
           <tr><td class="chan">Discurso</td><td>O argumento certo já foi escrito: “o cardápio é o primeiro contato do cliente com o restaurante”</td></tr>
-          <tr><td class="chan">Logotipo</td><td>A árvore geométrica recente é limpa, legível e funciona bem em tamanhos pequenos</td></tr>
-          <tr><td class="chan">Bastidores</td><td>Conteúdo de processo (modelagem 3D, “Máquinas ON”, “+1 finalizado”) já é produzido</td></tr>
+          <tr><td class="chan">Nome</td><td>“Manacá” é curto, sonoro e traz uma história pronta: a árvore cujas flores mudam de cor</td></tr>
         </tbody>
       </table>
     </div>
@@ -416,7 +416,7 @@ body[data-theme="dark"] #pager button:hover{background:rgba(255,255,255,.1);}
           <tr><td class="chan">Nome</td><td>Três grafias diferentes, incluindo “MANACA” sem acento no site</td></tr>
           <tr><td class="chan">Cor</td><td>Paleta muda a cada fase do feed; amarelo dos botões do site fora de qualquer padrão</td></tr>
           <tr><td class="chan">Tipografia</td><td>Quatro famílias tipográficas sem hierarquia, trocando de post para post</td></tr>
-          <tr><td class="chan">Fotografia</td><td>Cenas de IA no lugar das peças reais; as fotos reais existentes têm luz e fundo amadores</td></tr>
+          <tr><td class="chan">Fotografia</td><td>Peças apresentadas em cenas de IA; falta fotografia real e de qualidade do produto em uso</td></tr>
           <tr><td class="chan">Templates</td><td>Sem sistema nem editorias; o mesmo bordão repetido com execuções diferentes</td></tr>
           <tr><td class="chan">Argumento</td><td>Cerca de sete promessas ao mesmo tempo, sem uma mensagem central</td></tr>
           <tr><td class="chan">Texto</td><td>Erros de português em site e legendas (“dislpays”, “idéia”, “suas necessidade”)</td></tr>
@@ -439,7 +439,8 @@ body[data-theme="dark"] #pager button:hover{background:rgba(255,255,255,.1);}
         <li>Refinar a seta de crescimento, ou trazer a flor do manacá para o símbolo, tirando o tom de consultoria.</li>
         <li>Definir um nome oficial único e uma paleta derivada do logo (verde-petróleo, o verde da seta e um neutro quente que converse com madeira e restaurante).</li>
         <li>Criar um sistema tipográfico com hierarquia clara e um tom de voz com um argumento central só.</li>
-        <li>Trocar as cenas de IA por fotografia real das peças nos restaurantes, com direção de luz e enquadramento.</li>
+        <li>Produzir fotos reais e de melhor qualidade das peças nos restaurantes, com direção de luz e enquadramento, no lugar das cenas de IA.</li>
+        <li>Criar conteúdo de bastidores, hoje ausente do perfil: modelagem 3D, impressão, pintura e a peça finalizada.</li>
         <li>Montar templates por editoria, capas de destaque e uma bio que diga para quem é e como pedir.</li>
         <li>Construir um site novo em formato de funil, terminando em um pedido de orçamento pelo WhatsApp.</li>
       </ul>
@@ -465,7 +466,7 @@ body[data-theme="dark"] #pager button:hover{background:rgba(255,255,255,.1);}
     <div class="body-area">
       <ul class="findlist reveal-list">
         <li><b>Cases reais:</b> cada display apresentado no restaurante do cliente, com o nome da casa, o desafio e a peça na mesa, em uso.</li>
-        <li><b>Bastidores e processo:</b> da modelagem 3D à pintura final, com frequência fixa; é o conteúdo que prova que a peça é feita sob medida.</li>
+        <li><b>Bastidores e processo:</b> uma editoria nova, da modelagem 3D à pintura final, com frequência fixa. É o conteúdo que prova que a peça é feita sob medida.</li>
         <li><b>Antes e depois:</b> o “xerox colado” ao lado do display pronto. Substitui a repetição do bordão por uma demonstração concreta.</li>
         <li><b>Educativo para donos de restaurante:</b> o cardápio como primeiro contato com o cliente, o QR code que funciona, a mesa como parte da identidade da casa.</li>
         <li><b>Prova social:</b> depoimentos dos donos, logos dos clientes e repost de quem já recebeu a peça.</li>
@@ -494,7 +495,7 @@ body[data-theme="dark"] #pager button:hover{background:rgba(255,255,255,.1);}
       <ul class="findlist reveal-list">
         <li>Validar este diagnóstico e alinhar o escopo: padronização a partir do logo atual, não rebranding.</li>
         <li>Manual de identidade enxuto: usos e versões do logo, paleta, tipografia, tom de voz e argumento central. Refinamento da seta como etapa opcional.</li>
-        <li>Direção de fotografia: guia de enquadramento (peça em destaque, em uso, plano geral do salão), referências de luz e lista de cenas por cliente.</li>
+        <li>Direção de fotografia e sessão de fotos reais nos restaurantes: guia de enquadramento (peça em destaque, em uso, plano geral do salão), referências de luz e lista de cenas por cliente.</li>
         <li>Templates de Instagram por editoria, capas de destaque, bio reescrita e calendário editorial.</li>
         <li>Site novo em funil: promessa, problema, solução, como funciona, cases, depoimentos, perguntas frequentes e orçamento pelo WhatsApp.</li>
       </ul>
